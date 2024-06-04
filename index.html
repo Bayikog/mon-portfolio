@@ -5,24 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Jonathan Verplancke</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="banner">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vyg5jJrZ42s?start=10" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <button id="muteButton">Couper le son</button>
+    <div class="video-background">
+        <iframe src="https://www.youtube.com/embed/vyg5jJrZ42s?start=10&autoplay=1&mute=1&loop=1&playlist=vyg5jJrZ42s" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
-    <h1>Bienvenue sur le portfolio de Jonathan Verplancke</h1>
-    <p>Actuellement à la recherche d'une alternance.</p>
-    <div class="buttons">
-        <a href="CV Avril 2024.pdf" download="Jonathan_Verplancke_CV.pdf">Télécharger le CV</a>
-        <a href="mailto:jonathan.verplancke@orange.fr">Me contacter</a>
-        <a href="experiences.html">Expériences</a>
-        <a href="projects.html">Projets</a>
-        <a href="skills.html">Compétences</a>
+    <div class="content">
+        <h1>Bienvenue sur le portfolio de Jonathan Verplancke</h1>
+        <p>Actuellement à la recherche d'une alternance.</p>
+        <div class="buttons">
+            <a href="CV Avril 2024.pdf" download="Jonathan_Verplancke_CV.pdf">Télécharger le CV</a>
+            <a href="mailto:jonathan.verplancke@orange.fr">Me contacter</a>
+            <a href="experiences.html">Expériences</a>
+            <a href="projects.html">Projets</a>
+            <a href="skills.html">Compétences</a>
+        </div>
     </div>
-    <footer>
-        <p>&copy; 2023 Jonathan Verplancke</p>
-    </footer>
     <script src="js/scripts.js"></script>
 </body>
 </html>
